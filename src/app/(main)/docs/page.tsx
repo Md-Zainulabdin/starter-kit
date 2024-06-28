@@ -112,7 +112,7 @@ const Docs = () => {
           </ol>
           <p className="max-w-3xl text-wrap text-xl text-muted-foreground">
             You can start editing the page by modifying{" "}
-            <code>app/page.tsx</code>. The page auto-updates as you edit the
+            <code>app/(main)/page.tsx</code>. The page auto-updates as you edit the
             file.
           </p>
         </div>

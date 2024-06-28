@@ -1,10 +1,10 @@
 "use client";
-import { z } from "zod";
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Loader2 } from "lucide-react";
 import { useForm } from "react-hook-form";
+import { signIn } from "next-auth/react";
 
 import {
   Form,
@@ -48,27 +48,27 @@ const LoginForm = () => {
       redirect: false,
     };
 
-    // try {
-    //   const response = await signIn("credentials", formData);
-    //   if (response?.ok) {
-    //     toast({
-    //       title: "Login Successfull",
-    //     });
-    //     router.push("/");
-    //   } else {
-    //     toast({
-    //       title: `${response?.error}`,
-    //       variant: "destructive",
-    //     });
-    //   }
-    // } catch (error) {
-    //   toast({
-    //     title: "Authentication",
-    //     description: "Login Failed",
-    //   });
-    // } finally {
-    //   setLoading(false);
-    // }
+    try {
+      const response = await signIn("credentials", formData);
+      if (response?.ok) {
+        toast({
+          title: "Login Successfull",
+        });
+        router.push("/");
+      } else {
+        toast({
+          title: `${response?.error}`,
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Authentication",
+        description: "Login Failed",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

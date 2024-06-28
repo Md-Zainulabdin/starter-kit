@@ -17,6 +17,8 @@ export const POST = async (request: NextRequest) => {
       password: hashedPassword,
     };
 
+    // Write your database code here
+
     return NextResponse.json(user, {
       status: 201,
       statusText: "Registration Successfull",
