@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Starter Kit
 
-## Getting Started
+This is a starter kit for a Next.js application with TypeScript, TailwindCSS, Shadcn UI, Prisma, and NextAuth. It is designed to provide a robust and scalable foundation for building web applications.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This starter kit integrates:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **[TypeScript](https://www.typescriptlang.org/):** A strongly typed programming language that builds on JavaScript.
+- **[TailwindCSS](https://tailwindcss.com/):** A utility-first CSS framework for rapid UI development.
+- **[Shadcn UI](https://shadcn.dev/):** A component library for building consistent and customizable UI components.
+- **[Prisma](https://www.prisma.io/):** An ORM (Object-Relational Mapping) tool for database interaction.
+- **[NextAuth](https://next-auth.js.org/):** Authentication for Next.js applications.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation Process
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To get started with this project, follow these steps:
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-repo/nextjs-starter-kit.git
+    cd nextjs-starter-kit
+    ```
+
+2. Install dependencies:
+    ```sh
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    # or
+    bun install
+    ```
+
+3. Run the development server:
+    ```sh
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    # or
+    bun dev
+    ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/(main)/page.tsx`. The page auto-updates as you edit the file.
+
+## Tech Stack
+
+This project uses the following technologies:
+
+- **[Next.js](https://nextjs.org/):** A React framework for building server-side rendered applications.
+- **[TypeScript](https://www.typescriptlang.org/):** A strongly typed programming language that builds on JavaScript.
+- **[TailwindCSS](https://tailwindcss.com/):** A utility-first CSS framework for rapid UI development.
+- **[Shadcn UI](https://shadcn.dev/):** A component library for building consistent and customizable UI components.
+- **[Prisma](https://www.prisma.io/):** An ORM (Object-Relational Mapping) tool for database interaction.
+- **[NextAuth](https://next-auth.js.org/):** Authentication for Next.js applications.
+
+## Key Points
+
+- **Next.js:** Provides a hybrid static & server rendering, TypeScript support, and a powerful routing system.
+- **TypeScript:** Enhances JavaScript with type definitions, improving developer productivity and code quality.
+- **TailwindCSS:** Allows for rapid styling with utility classes, making it easy to create responsive designs.
+- **Shadcn UI:** Offers a set of customizable components to maintain a consistent look and feel across your application.
+- **Prisma:** Simplifies database access and management with a type-safe query builder and schema migration tools.
+- **NextAuth:** Simplifies adding authentication to your Next.js application with a flexible and extensible solution.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about each technology used in this starter kit, check out the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/) - Comprehensive guide to TypeScript.
+- [TailwindCSS Documentation](https://tailwindcss.com/docs) - TailwindCSS utilities and best practices.
+- [Shadcn UI Documentation](https://shadcn.dev/docs) - Explore Shadcn UI components and customization.
+- [Prisma Documentation](https://www.prisma.io/docs) - Understand Prisma's ORM capabilities and usage.
+- [NextAuth Documentation](https://next-auth.js.org/getting-started/introduction) - Get started with NextAuth for authentication.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/) from the creators of Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
