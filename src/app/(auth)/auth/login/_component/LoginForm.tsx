@@ -54,7 +54,7 @@ const LoginForm = () => {
         toast({
           title: "Login Successfull",
         });
-        router.push("/");
+        router.push("/dashboard");
       } else {
         toast({
           title: `${response?.error}`,

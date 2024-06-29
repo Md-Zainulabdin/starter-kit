@@ -8,11 +8,11 @@ interface Props {
   children: React.ReactNode;
 }
 
-const AuthLayout: React.FC<Props> = async ({ children }) => {
+const DashboardLayout: React.FC<Props> = async ({ children }) => {
   const auth = await getAuth();
 
-  if (auth?.user) {
-    redirect("/");
+  if (!auth?.user) {
+    redirect("/auth/login");
   }
   return (
     <div className="relative">
@@ -26,4 +26,4 @@ const AuthLayout: React.FC<Props> = async ({ children }) => {
   );
 };
 
-export default AuthLayout;
+export default DashboardLayout;
