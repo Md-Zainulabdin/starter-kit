@@ -23,7 +23,7 @@ export const options: NextAuthOptions = {
 
         const user = {
           role: "admin",
-          email: "zain@test.com",
+          email: "user@test.com",
           password: "12345",
         };
 
