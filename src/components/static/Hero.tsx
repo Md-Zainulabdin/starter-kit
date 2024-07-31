@@ -10,7 +10,7 @@ const Hero = () => {
         </h1>
       </div>
 
-      <p className="text-muted-foreground max-w-4xl text-center text-2xl tracking-tighter">
+      <p className="max-w-4xl text-center text-2xl tracking-tighter text-muted-foreground">
         This is a starter kit for building a Next.js app with Shadcn.ui and
         authentication. It includes a basic layout, a login page, and a
         dashboard page

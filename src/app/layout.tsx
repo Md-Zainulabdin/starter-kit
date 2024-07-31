@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { Toaster } from "@/components/ui/toaster";
 import { NextAuthProvider } from "@/providers/auth-provider";
+import { SiteFooter } from "@/components/static/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <main className="antialiased">{children}</main>
           <Toaster />
+          <SiteFooter />
         </body>
       </NextAuthProvider>
     </html>
